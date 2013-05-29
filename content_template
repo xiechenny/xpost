@@ -6,6 +6,6 @@ It's a tool in shell script written by myself.
 The script will format text file into html and automatically add header / footer as setted.
 the output is a legal post file in jekyll
 
-the code is upload to github: <a href="https://github.com/xiechenny/xpost">get me</a>  (by chenny xie~)
+the code is upload to github: <a target=_blank href="https://github.com/xiechenny/xpost">get me</a>  (by chenny xie~)
 the simple introduction of the script is as picture shows:
 <img style="width:500px;" src="http://www.xchenny.com/img/xpost/usage.png"/>
