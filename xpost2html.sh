@@ -11,6 +11,8 @@ bolderl="/b "
 bolderr=" b/"
 italicl="/i "
 italicr=" i/"
+underlinel="/u "
+underliner=" u/"
 code="<pre>"
 coder="</pre>"
 beginpre=0
@@ -41,6 +43,10 @@ do
   then
   line=${line//"$bolderl"/<b>}
   line=${line//"$bolderr"/</b>}
+  line=${line//"$italicl"/<i>}
+  line=${line//"$italicr"/</i>}
+  line=${line//"$underlinel"/<u>}
+  line=${line//"$underliner"/</u>}
   line=${line//"$padding"/&nbsp;&nbsp;&nbsp;&nbsp;}
   line="${line}<br/>"
   fi
