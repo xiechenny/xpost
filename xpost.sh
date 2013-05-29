@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #configuration:
 content="content_template"  
@@ -13,7 +13,7 @@ beginhtml=0
 
 if test -z $1
 then
-  if [ -f "content_template" ]
+  if [ -f "content_template" ];
   then
     input="content_template"
     outbackup=1
@@ -23,16 +23,33 @@ then
   fi
 else
   config=$1
-  if [[ ! -z $2 ]] && [[ "$config"x = "-format"x ]] && [[ -f $2 ]]
+  if [ "$config"x = "-clean"x ]; then
+    echo "title:" > content_template
+    echo "category:" >> content_template
+    echo "tags:" >> content_template
+    echo "---" >> content_template
+    echo "" >> content_template
+    echo "[xpost]clean complete."
+    exit 0
+  fi
+
+  if [ "$config"x = "-date"x ]; then
+    echo "" > ${postname}_$2${postname_ext}
+    exit 0
+  fi
+
+  if [[ ! -z $2 ]] && [[ "$config"x = "-format"x ]] && [[ -f $2 ]];
   then
     postname=$2
     postname=${postname%.*}
     input=$2
   else
-    echo "Usage: ./xpost.sh [-config] [file]"
-    echo "Config: "
-    echo "format\t- format the backup content to be the new post"
-    exit 0
+        echo "Usage: ./xpost.sh [-config]"
+        echo "Config: "
+        echo -e "-format [file]\t- format the backup content to be the new post"
+        echo -e "-clean \t\t- clean the content template"
+        echo -e "-date [name]\t- produce empty file with name: year-month-date-time_name.html"
+        exit 0
   fi
 fi
 

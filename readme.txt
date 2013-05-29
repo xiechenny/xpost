@@ -10,7 +10,7 @@ The content automatically translates:
 /b text b/ : bolder
 /i text i/ : italic
 /u text u/ : underline
-/t to padding 4 space
+/t text : to padding 4 space
 and, support <pre></pre> tags to be not translated.
 
 The "usage.png" picture may be more understandable.

@@ -27,7 +27,7 @@ fi
 input=$1
 postname=${input}.html
 touch $postname
-echo "" > $postname
+echo -n "" > $postname
 
 #begin format change
 cat $input | while read line

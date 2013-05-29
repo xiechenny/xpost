@@ -10,7 +10,7 @@ the content automatically translates:<br/>
 /b text b/ : <b>text</b><br/>
 /i text i/ : <i>text</i><br/>
 /u text u/ : <u>text</u><br/>
-/t to padding 4 space<br/>
+/t text : to padding 4 space<br/>
 and, support &lt;pre&gt; &lt;/pre&gt; tags to be not translated.<br/>
 <br/>
 the basic control flow is as follow:<br/>
