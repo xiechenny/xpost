@@ -14,7 +14,7 @@ the content automatically translates:<br/>
 and, support &lt;pre&gt; &lt;/pre&gt; tags to be not translated.<br/>
 <br/>
 the basic control flow is as follow:<br/>
-<img style="width:600px;" src="http://www.xchenny.com/img/xpost/usage.png" />
+<img style="width:600px;" src="https://raw.github.com/xiechenny/xpost/master/usage.png" />
 <br/>
 ------------<br/>
 written by Chenny Xie<br/>
